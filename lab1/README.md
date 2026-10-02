@@ -26,7 +26,6 @@
 int main() {
     printf("Vvedite chislo potokov \n");
     int N = 0;
-    // Примечание: scanf_s работает в MSVC (Windows), для GCC/Linux используйте scanf
     scanf_s("%d", &N); 
 
     #pragma omp parallel num_threads(N)
